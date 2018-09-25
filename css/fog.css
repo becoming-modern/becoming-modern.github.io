@@ -31,11 +31,11 @@ figure {
 @keyframes fadeInOpacity {
     0% {
 	opacity: 0;
-        color: #fff;
+        color: #555;
     }
     50% {
         opacity: .5;
-        color: #777;
+        color: #222;
     }
     100% {
 	opacity: 1;
@@ -103,8 +103,8 @@ div.title-wrapper {
 
 h1 {
     position: absolute;
-    margin: 0;
     font-size: 3em;
+    margin: 0;
     top: 50vh;
     left: 50%;
     margin-right: -50%;
@@ -114,6 +114,7 @@ h1 {
     animation-fill-mode: both;
 
 }
+
     
 div.info {
     opacity:0;
@@ -140,28 +141,45 @@ h1{animation-delay: 5s;}
 @keyframes fadeInTitle {
     0% {
 	opacity: 0;
-        color: #fff;
-        background-color:none;
+        color: #bbb;
+        background-color: #fff;
 
     }
     50% {
         opacity: .5;
-        background-color: none;
+        background-color: #ccc;
         border: none;
+        color: #666;
     }
 
     75% {
-        opacity: .75;
-        background-color: #bbb;
-        border: 2px solid #bbb;
-        color: #333;
+        opacity: .8;
+        background-color: #777;
+        border: none;
+        color: #222;
     }
     100% {
 	opacity: 1;
         color: #000;
-        background-color: #777;
+        background-color: #555;
         border: 5px solid black;
     }
 }
+
+@media all and (max-width: 959px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    div.info {
+        animation: fadeInTitle 10s ease-in 1;
+        animation-delay: 10s;
+        animation-fill-mode: both;
+        left: 0;
+        bottom:0;
+        width: 100vw;
+    }
+}
+
 
 
