@@ -50,7 +50,7 @@ figure {
 .fog {
   position: relative;
   height: 100vh;
-  width: 100%vw;
+  width: 100vw;
   background-color: #000;
   /* opacity: 0; */
 }
@@ -97,7 +97,7 @@ div.title-wrapper {
     top: 0;
     left: 0;
     height: 100vh;
-    width: 100%vw;
+    width: 100vw;
     background-color: transparent;
 
 }
@@ -133,11 +133,37 @@ div.info {
 h1{animation-delay: 5s;}
 .absolute-bg{animation-delay: 10s;}
 
+h1 span.a {
+    /* display: inline-block; */
+    animation: fadespan 10s ease-in 1;
+    animation-fill-mode: both;
+    animation-delay: 7s;
+    border-style: none;
+    background: inherit;
+    
+}
+
+h1 span.b {
+    /* display: inline-block; */
+    animation: fadespan 10s ease-in 1;
+    animation-fill-mode: both;
+    animation-delay: 11s;
+    border: none;
+    background: inherit;
+}
+
 @keyframes fadebg {
 
     0% {opacity: 0;}
     50% {opacity: 0.8;}
     100% {opacity: 0.25;}
+}
+
+@keyframes fadespan {
+
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
 }
 
 @keyframes fadeInTitle {
